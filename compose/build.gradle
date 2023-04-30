@@ -11,7 +11,7 @@ plugins {
 
 android {
     compileSdk 33
-    namespace 'com.flamingo.support.compose'
+    namespace 'com.kosp.support.compose'
     defaultConfig {
         minSdkVersion 31
         targetSdkVersion 33

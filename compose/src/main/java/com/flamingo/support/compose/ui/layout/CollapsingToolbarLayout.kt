@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 FlamingoOS Project
+ * Copyright (C) 2021-2023 AOSP-Krypton Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.flamingo.support.compose.ui.layout
+package com.kosp.support.compose.ui.layout
 
 import androidx.compose.animation.core.FastOutLinearInEasing
 import androidx.compose.foundation.layout.Column
@@ -54,8 +54,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-import com.flamingo.support.compose.R
-import com.flamingo.support.compose.ui.preferences.Preference
+import com.kosp.support.compose.R
+import com.kosp.support.compose.ui.preferences.Preference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

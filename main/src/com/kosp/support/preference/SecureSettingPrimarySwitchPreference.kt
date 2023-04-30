@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 FlamingoOS Project
+ * Copyright (C) 2021-2023 AOSP-Krypton Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,19 @@
  * limitations under the License.
  */
 
-package com.flamingo.support.preference
+package com.kosp.support.preference
 
 import android.content.Context
+import android.provider.Settings
 import android.util.AttributeSet
 
-import androidx.preference.EditTextPreference
-
-public class SystemSettingEditTextPreference @JvmOverloads constructor(
+class SecureSettingPrimarySwitchPreference @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
-): EditTextPreference(context, attrs) {
+): SettingPrimarySwitchPreference(context, attrs) {
     init {
-        setPreferenceDataStore(SystemSettingsStore(context.contentResolver))
+        setPreferenceDataStore(SecureSettingsStore(context.contentResolver))
     }
+
+    override fun getUri() = Settings.Secure.getUriFor(key)
 }

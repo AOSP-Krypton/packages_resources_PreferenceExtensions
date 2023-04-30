@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016-2017 The Dirty Unicorns Project
- * Copyright (C) 2022 FlamingoOS Project
+ * Copyright (C) 2021-2023 AOSP-Krypton Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  * limitations under the License
  */
 
-package com.flamingo.support.preference
+package com.kosp.support.preference
 
 import android.content.Context
 import android.graphics.PorterDuff
@@ -30,7 +30,7 @@ import android.widget.Toast
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
 
-import com.flamingo.support.R
+import com.kosp.support.R
 
 open class CustomSeekBarPreference @JvmOverloads constructor(
     context: Context,

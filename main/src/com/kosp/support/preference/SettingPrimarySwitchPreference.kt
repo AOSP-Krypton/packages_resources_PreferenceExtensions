@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2022 FlamingoOS Project
+ * Copyright (C) 2021-2023 AOSP-Krypton Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.flamingo.support.preference
+package com.kosp.support.preference
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -32,7 +32,7 @@ import androidx.preference.PreferenceDataStore
 import androidx.preference.PreferenceViewHolder
 
 import com.android.settingslib.widget.TwoTargetPreference
-import com.flamingo.support.R
+import com.kosp.support.R
 
 /**
  * A primary switch that can observe changes to setting value and update

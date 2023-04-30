@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 FlamingoOS Project
+ * Copyright (C) 2021-2023 AOSP-Krypton Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-package com.flamingo.support.compose.ui.preferences
+package com.kosp.support.compose.ui.preferences
 
 data class Entry<out T>(val name: String, val value: T)

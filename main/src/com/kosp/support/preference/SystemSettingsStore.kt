@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.flamingo.support.preference
+package com.kosp.support.preference
 
 import android.content.ContentResolver
 import android.provider.Settings

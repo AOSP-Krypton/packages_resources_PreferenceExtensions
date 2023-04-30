@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 FlamingoOS Project
+ * Copyright (C) 2021-2023 AOSP-Krypton Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,18 @@
  * limitations under the License.
  */
 
-package com.flamingo.support.preference
+package com.kosp.support.preference
 
 import android.content.Context
 import android.util.AttributeSet
 
-public class SystemSettingColorPickerPreference @JvmOverloads constructor(
+import com.android.settingslib.widget.MainSwitchPreference
+
+class SecureSettingMainSwitchPreference @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
-): ColorPickerPreference(context, attrs) {
+): MainSwitchPreference(context, attrs) {
     init {
-        setPreferenceDataStore(SystemSettingsStore(context.contentResolver))
+        setPreferenceDataStore(SecureSettingsStore(context.contentResolver))
     }
 }
